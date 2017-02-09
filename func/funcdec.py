@@ -1,4 +1,4 @@
-# encoding= utf-8
+# encoding: utf-8
 # 装饰器语法糖 @dec
 
 
