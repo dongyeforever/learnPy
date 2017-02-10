@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+import re
+
 
 # 找到imooc开头的语句
 def find_start(fname):
@@ -19,3 +21,16 @@ def find_end(fname):
 
 find_start('1.txt')
 find_end('1.txt')
+print('---------------------')
+
+
+def find_re(fname, pattern):
+    pa = re.compile(pattern)
+    f = open(fname)
+    for line in f:
+        match = pa.match(line)
+        if match:
+            print(match.group())
+
+
+find_re('1.txt', r'imooc')
