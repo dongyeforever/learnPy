@@ -1,4 +1,4 @@
-# encoding: utf-8
+# coding: utf-8
 
 str = 'hello, dongye'
 for s in str:

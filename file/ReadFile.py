@@ -1,4 +1,4 @@
-# encoding = utf-8
+# coding = utf-8
 
 f = open('test.txt', 'r')
 str = f.read(1024)

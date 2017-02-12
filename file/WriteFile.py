@@ -1,4 +1,4 @@
-# encoding = utf-8
+# coding = utf-8
 
 f = open('test.txt', 'w')
 f.write("hahaha")

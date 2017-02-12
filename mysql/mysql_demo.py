@@ -1,4 +1,4 @@
-# encoding: utf-8
+# coding: utf-8
 
 import pymysql
 
@@ -14,7 +14,6 @@ count = cursor.execute(sql)
 print(count)
 print(cursor.rowcount)
 print(cursor.rownumber)
-
 
 rs = cursor.fetchone()
 print(rs)
@@ -37,7 +36,8 @@ db.commit()
 #     cursor.execute(sql)
 #     # 提交到数据库执行
 #     db.commit()
-# except:
+# except Exception as e:
+#     print(e)
 #     # 如果发生错误则回滚
 #     db.rollback()
 

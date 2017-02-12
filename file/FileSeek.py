@@ -1,4 +1,4 @@
-# encoding = utf-
+# coding = utf-8
 import os
 
 f = open('test.txt', 'rb+')

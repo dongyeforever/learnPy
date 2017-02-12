@@ -1,4 +1,4 @@
-# encoding: utf-8
+# coding: utf-8
 from collections import Iterable
 from functools import reduce
 
