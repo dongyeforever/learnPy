@@ -1,1 +1,1 @@
-# learnPy
+# learn Python
