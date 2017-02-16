@@ -1,11 +1,11 @@
 # coding: utf-8
 
 from PIL import Image, ImageFilter
-
 from PIL import ImageDraw, ImageFont
 import random
 
 
+# ------------------------- 模糊 -----------------------------
 class MyGaussianBlur(ImageFilter.Filter):
     name = "GaussianBlur"
 
@@ -28,9 +28,8 @@ im = Image.open('test.jpg')
 im2 = im.filter(MyGaussianBlur(radius=20))
 im2.save('blur.jpg', 'jpeg')
 
-import random
 
-
+# ------------------------- 图片验证码 -----------------------------
 # 随机字母:
 def rndChar():
     return chr(random.randint(65, 90))
@@ -64,3 +63,6 @@ for t in range(4):
 # 模糊:
 image = image.filter(ImageFilter.BLUR)
 image.save('code.jpg', 'jpeg')
+
+# todo 12306验证码识别
+# https://kyfw.12306.cn/otn/passcodeNew/getPassCodeNew?module=login&rand=sjrand
